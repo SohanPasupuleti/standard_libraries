@@ -17,13 +17,10 @@ compile_commands.json
 *.lib
 *.pdb
 
-#IDE files
-.vscode/
-.idea/
-
 #operating system files
 .DS_Store
 Thumbs.db
 
 #local dependencies
+.vcpkg_cache
 vcpkg_installed/
