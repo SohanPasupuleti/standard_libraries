@@ -1,0 +1,15 @@
+#ifndef SHELL_CPP
+#define SHELL_CPP
+
+#include <windows.h>
+#include "../header/shell.hpp"
+
+String current_working_directory()
+{
+    TCHAR buffer[MAX_PATH] = {0};
+    GetModuleFileName( NULL, buffer, MAX_PATH);
+    std::string::size_type pos = std::string(buffer).find_last_of("\\/");
+    return std::string(buffer).substr(0, pos);
+}
+
+#endif

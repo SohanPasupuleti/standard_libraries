@@ -1,0 +1,13 @@
+standard_library/
+├── core/             # types, traits, utility functions
+├── data_structure/       # vectors, maps, lists, etc.
+├── io/               # files, streams, terminal
+├── concurrency/      # threads, locks, futures
+├── database/               # SQLite3 wrappers, etc.
+├── signal/           # signal handling, event dispatch
+├── math/             # linear algebra, stats, random
+├── net/              # sockets, http, etc. (optional)
+├── filesystem/       # filesystem paths, dirs
+├── time/             # chrono, timers, clocks
+├── testing/          # unit testing framework
+└── utility/             # misc tools, string utils, reflection

@@ -1,0 +1,29 @@
+#build directories
+build/
+build_*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+#compiled binaries and object files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.pdb
+
+#IDE files
+.vscode/
+.idea/
+
+#operating system files
+.DS_Store
+Thumbs.db
+
+#local dependencies
+vcpkg_installed/

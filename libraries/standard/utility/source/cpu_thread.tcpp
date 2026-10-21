@@ -1,0 +1,30 @@
+#ifndef CPU_THREAD_CPP
+#define CPU_THREAD_CPP
+
+    #ifdef _WIN32
+        #include "..\\Header\\string.hpp"
+    #else
+        #include "../Header/string.hpp"
+
+        CPU_Thread::CPU_Thread()
+        {
+            
+        }
+
+        CPU_Thread::CPU_Thread(void* (*start_routine)(void*), void* arguements)
+        {
+            pthread_create(&ID, nullptr, start_routine, arguements);
+        }
+
+        void CPU_Thread::wait()
+        {
+            pthread_join(ID, nullptr);
+        }
+
+        void CPU_Thread::sleep(unsigned int microseconds)
+        {
+            usleep(microseconds * 1000000U);
+        }
+
+    #endif
+#endif
